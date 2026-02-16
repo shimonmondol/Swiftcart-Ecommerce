@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Navbar Style -->
+    <header>
+      <header class="bg-base-100 shadow-xs">
+        <div class="max-w-5xl mx-auto">
+          <div class="navbar">
+            <div class="navbar-start">
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <!-- Hamburger Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li class="hover:text-blue-500"><a>Home</a></li>
+                  <li class="hover:text-blue-500"><a>Products</a></li>
+                  <li class="hover:text-blue-500"><a>About</a></li>
+                  <li class="hover:text-blue-500"><a>Contact</a></li>
+                </ul>
+              </div>
+
+              <h1 class="font-semibold text-xl text-blue-500 cursor-pointer">
+                SwiftCart
+              </h1>
+            </div>
+            <div class="navbar-center hidden lg:flex cursor-pointer">
+              <ul class="flex gap-6 text-md">
+                <li class="hover:text-blue-500"><a>Home</a></li>
+                <li class="hover:text-blue-500"><a>Products</a></li>
+                <li class="hover:text-blue-500"><a>About</a></li>
+                <li class="hover:text-blue-500"><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </header>
+    <!-- Banner Style -->
+     <div>
+      <img src="" alt="">
+     </div>
+  </body>
+</html>
