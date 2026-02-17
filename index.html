@@ -20,62 +20,70 @@
   </head>
   <body>
     <!-- Navbar Section -->
-    <header class="bg-base-100 shadow-xs overflow-hidden">
-      <div class="max-w-4xl mx-auto">
-        <div class="navbar">
-          <!-- Navbar Start -->
-          <div class="navbar-start">
-            <!-- Mobile Dropdown -->
-            <div class="dropdown">
-              <!-- Toggle -->
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <!-- Dropdown Menu -->
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow cursor-pointer"
-              >
-                <li class="hover:text-blue-500"><a>Home</a></li>
-                <li class="hover:text-blue-500"><a>Products</a></li>
-                <li class="hover:text-blue-500"><a>About</a></li>
-                <li class="hover:text-blue-500"><a>Contact</a></li>
-              </ul>
-            </div>
-            <!-- Logo -->
-            <h1 class="font-semibold text-xl text-blue-500 cursor-pointer ml-2">
-              SwiftCart
-            </h1>
+    <nav class="bg-white shadow-md">
+      <div class="lg:w-[960px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex-shrink-0">
+            <a href="#" class="text-2xl font-bold text-blue-500">SwiftCart</a>
           </div>
-          <!-- Navbar Center (Desktop) -->
-          <div class="navbar-center hidden lg:flex cursor-pointer">
-            <ul class="flex gap-6 text-md">
-              <li class="hover:text-blue-500"><a>Home</a></li>
-              <li class="hover:text-blue-500"><a>Products</a></li>
-              <li class="hover:text-blue-500"><a>About</a></li>
-              <li class="hover:text-blue-500"><a>Contact</a></li>
-            </ul>
+          <div class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-900 hover:text-blue-500 font-medium"
+              >Home</a
+            >
+            <a href="#" class="text-gray-900 hover:text-blue-500 font-medium"
+              >Products</a
+            >
+            <a href="#" class="text-gray-900 hover:text-blue-500 font-medium"
+              >About</a
+            >
+            <a href="#" class="text-gray-900 hover:text-blue-500 font-medium"
+              >Contact</a
+            >
           </div>
-          <!-- Navbar End -->
-          <div class="navbar-end cursor-pointer pr-4 lg:pr-0">
+          <div class="hidden md:flex items-center space-x-4 cursor-pointer">
             <i class="fa-solid fa-cart-shopping text-xl"></i>
+          </div>
+          <div class="md:hidden flex items-center space-x-4">
+            <div class="cursor-pointer">
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+            </div>
+            <button
+              id="mobile-menu-button"
+              class="text-gray-700 cursor-pointer focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-    </header>
+      <!-- Mobile Section -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium"
+          >Home</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium"
+          >Shop</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium"
+          >About</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium"
+          >Contact</a
+        >
+      </div>
+    </nav>
     <!-- Banner Section -->
     <div class="relative w-full overflow-hidden">
       <img
@@ -85,12 +93,12 @@
       />
       <div class="absolute inset-0 bg-slate-900/70"></div>
       <div
-        class="absolute inset-0 flex flex-col text-white lg:px-60 lg:pb-20 justify-center px-4 lg:px-0"
+        class="absolute inset-0 flex flex-col text-white px-4 lg:px-58 lg:pb-20 justify-center"
       >
         <h1 class="text-3xl lg:text-5xl font-bold">Best Collection For You</h1>
         <p class="mt-3 text-gray-200">
           Discover the latest trends in fashion,<br class="block sm:hidden" />
-          electronics and more. Shop with <br/>
+          electronics and more. Shop with <br />
           confident and style at SwiftCart.
         </p>
         <button class="mt-5 bg-blue-600 rounded-md text-white px-6 py-2 w-fit">
@@ -275,7 +283,7 @@
       <div
         class="footer sm:footer-horizontal text-white p-10 max-w-6xl mx-auto"
       >
-        <div class="lg:ml-22">
+        <div class="lg:ml-24">
           <h1 class="text-xl font-semibold text-blue-500">SwiftCart</h1>
           <p class="text-sm text-gray-400">
             Your one-stop shop for all your fashion
@@ -299,7 +307,7 @@
           <a class="link link-hover">Returns</a>
           <a class="link link-hover">Private Policy</a>
         </nav>
-        <div>
+        <div class="pr-6">
           <h6 class="footer-title">Subscribe Our Newsletter</h6>
           <p class="text-gray-400 text-sm">
             The latest news, articles sent to
@@ -321,7 +329,7 @@
         </div>
       </div>
       <div class="mr-6 lg:ml-6">
-        <hr class="border-gray-400 pb-4 w-[380px] lg:w-[900px] px-4 mx-auto" />
+        <hr class="border-gray-400 pb-4 w-[380px] lg:w-[880px] px-4 mx-auto" />
       </div>
       <div
         class="flex flex-col lg:flex-row w-full lg:w-[900px] mx-auto justify-between items-start lg:items-center pb-8 gap-4 ml-10 mt-2 lg:ml-54 lg:gap-0"
@@ -334,12 +342,12 @@
           <i class="fa-regular fa-envelope"></i>
         </div>
         <div
-          class="text-gray-400 text-sm text-start lg:text-center order-2 lg:order-1 lg:ml-2"
+          class="text-gray-400 text-sm text-start lg:text-center order-2 lg:order-1 lg:ml-5"
         >
           @ 2026 Swiftcart, Inc. All rights reserved.
         </div>
       </div>
     </div>
-    <script class="./app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
