@@ -4,7 +4,7 @@ Answer :
 undefined : variable is declared but has no value.
 null : intentional no value assigned by the programmer.
  
-1) What is the use of the map() function in JavaScript? How is it different from forEach()?
+2) What is the use of the map() function in JavaScript? How is it different from forEach()?
 
 Answer:
 
